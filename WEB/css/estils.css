@@ -1,0 +1,198 @@
+/*Estils generals*/
+* {
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+#all {
+    width: 80%;
+    margin: auto;
+    background-color: #909090;
+}
+
+/*Estils del menu*/
+header{
+    position: relative;
+}
+header img {
+    width: 250px;
+}
+
+nav {
+    padding: 5px;
+    position: fixed;
+    z-index: 100;
+    background-color: black;
+    width: 100%;
+    margin-top: -200px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+}
+
+nav ul li {
+    margin-top: 50px;
+    margin-left: 40px;
+}
+
+nav ul li a {
+    padding: 10px;
+    font-size: 1.3em;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    color: goldenrod;
+    background-color: #101010;
+}
+#baixa{
+    margin-top: 200px;
+    padding: 10px;
+}
+/*Estils del titol*/
+h1 {
+    padding: 5px;
+    background-color: royalblue;
+    border-radius: 10px;
+    margin-left: 40px;
+    color: white;
+    width: 400px;
+    text-align: center;
+}
+/*Estil de la barra de busqueda*/
+.input-group{
+    text-align: center;
+}
+.form-control{
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 1.2em;
+    width: 800px;
+
+}
+/*Estils de les taules*/
+table {
+    padding: 5px;
+    margin: 5px auto;
+    width: 1000px;
+}
+
+caption {
+    font-size: 2.5em;
+    font-family: monospace;
+    font-weight: bold;
+    color: #4EFF00;
+}
+
+th {
+    background-color: red;
+    font-size: 1.3em;
+    color: aqua;
+    padding: 5px;
+}
+
+td {
+    padding: 3px;
+    background-color: #FF6800;
+    color: #070267;
+    font-size: 1.2em;
+}
+
+/*Estils del footer*/
+footer {
+    margin-top: 50px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.fa {
+    padding: 10px;
+    font-size: 1.5em;
+    text-align: center;
+    text-decoration: none;
+    width: 15px;
+    height: 15px;
+    margin: 5px;
+
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+/*Estils per a pantalles mes petites de 768 pixels*/
+
+@media only screen and (max-width: 768px) {
+   * {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    }
+    #all{
+        background-color: black;
+    }
+    header img{
+        width: 150px;
+    }
+    nav{
+        margin-top: -100px;
+    }
+    #baixa{
+    margin-top: 100px;
+    padding: 10px;
+    }
+    h1{
+        margin-left: 0;
+    }
+    .form-control{
+        width: 550px;
+    }
+    section{
+        display: block;
+        justify-content: center;
+    }
+    table{
+        max-width: 650px;
+        margin-left: -30px;
+    }
+    footer {
+    margin-top: 30px;
+    margin-left: 200px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    }
+    .fa {
+    padding: 10px;
+    font-size: 1em;
+    text-align: center;
+    text-decoration: none;
+    width: 10px;
+    height: 10px;
+    margin: 5px;
+    }
+}
